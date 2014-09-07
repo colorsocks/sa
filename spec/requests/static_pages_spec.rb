@@ -40,4 +40,19 @@ require 'spec_helper'
  			expect(page).to have_title("Ruby on Rails Tutorial Sample App | About Us")
  		end
  	end
+
+ 	describe "Cantact page" do
+
+ 		it "should have the content 'Contact'" do
+ 			visit '/static_pages/contact'
+ 			expect(page).to have_content('Contact')
+ 		end
+
+ 		it "should have title 'Contact" do
+ 			visit '/static_pages/contact'
+ 			expect(page).to have_title('Contact')
+
+ 		end
+ 		
+ 	end
  end
